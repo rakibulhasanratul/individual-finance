@@ -287,7 +287,7 @@ So that the API has proper request handling and observability.
 
 **Given** the project has oRPC installed,
 **When** I create the router configuration with domain procedures,
-**Then** the router is accessible at /api/orpc
+**Then** the router is accessible at /rpc
 **And** all procedures follow the naming convention (domain.action)
 
 **Given** the middleware stack is configured,
