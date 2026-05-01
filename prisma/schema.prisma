@@ -1,5 +1,11 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client"
+  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -94,9 +100,15 @@ model GroupMemberPermission {
   uuid                 String      @id @default(uuid()) @db.Uuid
   memberUuid           String      @map("member_uuid") @db.Uuid
   groupUuid            String      @map("group_uuid") @db.Uuid
+  canInviteMember      Boolean     @default(false) @map("can_invite_member")
+  canRemoveMember      Boolean     @default(false) @map("can_remove_member")
+  canDeposit           Boolean     @default(true) @map("can_deposit")
+  canWithdraw          Boolean     @default(true) @map("can_withdraw")
   canReserveForGoal    Boolean     @default(false) @map("can_reserve_for_goal")
   canImplementGoal     Boolean     @default(false) @map("can_implement_goal")
+  canSettleObligation  Boolean     @default(true) @map("can_settle_obligation")
   canUpdatePermissions Boolean     @default(false) @map("can_update_permissions")
+  canViewAudit         Boolean     @default(true) @map("can_view_audit")
   group                Group       @relation(fields: [groupUuid], references: [uuid], onDelete: Cascade)
   member               GroupMember @relation(fields: [memberUuid], references: [uuid], onDelete: Cascade)
 
