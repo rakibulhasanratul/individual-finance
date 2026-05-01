@@ -1,0 +1,18 @@
+repos:
+  - repo: local
+    hooks:
+      - id: pnpm-format
+        name: pnpm format
+        entry: pnpm format
+        language: system
+        pass_filenames: false
+        stages: [commit]
+        description: "Run project formatter via pnpm before committing"
+
+      - id: pnpm-lint
+        name: pnpm lint
+        entry: pnpm lint
+        language: system
+        pass_filenames: false
+        stages: [commit]
+        description: "Run project linter via pnpm before committing"
