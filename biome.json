@@ -1,0 +1,63 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.12/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "app/**/*.{ts,tsx,js,jsx,json,css}",
+      "server/**/*.{ts,tsx,js,jsx,json}",
+      "shared/**/*.{ts,tsx,js,jsx,json}",
+      "components/**/*.{ts,tsx,js,jsx}",
+      "features/**/*.{ts,tsx,js,jsx}",
+      "entities/**/*.{ts,tsx,js,jsx}",
+      "tests/**/*.{ts,tsx,js,jsx}",
+      "prisma/**/*.{ts,prisma}",
+      "middleware.ts",
+      "vitest.config.ts",
+      "next.config.ts",
+      "tsconfig*.json",
+      "!node_modules",
+      "!dist"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "correctness": {
+        "noUnusedFunctionParameters": "error",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error",
+        "noUnusedLabels": "error",
+        "noUnusedPrivateClassMembers": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}
