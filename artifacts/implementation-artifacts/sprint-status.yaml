@@ -46,7 +46,7 @@ development_status:
   epic-1: in-progress
   1-1-initialize-next-js-project-with-pnpm: done
   1-2-configure-environment-type-safe-configuration: done
-  1-3-set-up-postgresql-schema-with-prisma: backlog
+  1-3-set-up-postgresql-schema-with-prisma: done
   1-4-set-up-orpc-router-middleware-stack: backlog
   1-5-implement-auth-js-authentication-system: backlog
   1-6-implement-client-side-observability-trace-propagation: backlog
