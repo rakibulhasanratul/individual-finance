@@ -1,0 +1,119 @@
+# generated: 2026-05-02T00:00:00.000Z
+# last_updated: 2026-05-02T00:00:00.000Z
+# project: Individual Finance
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: /home/ratul/CodeBase/individual-finance/artifacts/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: 2026-05-02T00:00:00.000Z
+last_updated: 2026-05-02T00:00:00.000Z
+project: Individual Finance
+project_key: NOKEY
+tracking_system: file-system
+story_location: /home/ratul/CodeBase/individual-finance/artifacts/implementation-artifacts
+
+development_status:
+  # Epic 1: Project Foundation & Infrastructure
+  epic-1: in-progress
+  1-1-initialize-next-js-project-with-pnpm: done
+  1-2-configure-environment-type-safe-configuration: done
+  1-3-set-up-postgresql-schema-with-prisma: backlog
+  1-4-set-up-orpc-router-middleware-stack: backlog
+  1-5-implement-auth-js-authentication-system: backlog
+  1-6-implement-client-side-observability-trace-propagation: backlog
+  epic-1-retrospective: optional
+
+  # Epic 2: Personal Finance Module
+  epic-2: backlog
+  2-1-record-personal-income: backlog
+  2-2-record-personal-expense: backlog
+  2-3-manage-personal-categories: backlog
+  2-4-create-track-personal-goals: backlog
+  2-5-reserve-funds-for-personal-goal: backlog
+  2-6-implement-personal-goal: backlog
+  2-7-create-personal-loan-record: backlog
+  2-8-record-loan-repayment: backlog
+  2-9-create-personal-lend-record: backlog
+  2-10-record-lend-repayment: backlog
+  epic-2-retrospective: optional
+
+  # Epic 3: Group Finance Core (Deposits & Withdrawals)
+  epic-3: backlog
+  3-1-create-group: backlog
+  3-2-invite-group-members-via-email: backlog
+  3-3-record-group-deposit: backlog
+  3-4-record-standard-group-withdrawal: backlog
+  3-5-calculate-display-available-group-funds: backlog
+  3-6-enforce-group-funds-invariant: backlog
+  epic-3-retrospective: optional
+
+  # Epic 4: Goals & Reserve Management
+  epic-4: backlog
+  4-1-create-group-goal: backlog
+  4-2-reserve-funds-from-members-admin-action: backlog
+  4-3-implement-group-goal-admin-action: backlog
+  4-4-goal-progress-timeline: backlog
+  epic-4-retrospective: optional
+
+  # Epic 5: Borrowing & Settlement System
+  epic-5: backlog
+  5-1-handle-over-withdrawal-borrowing-allocation: backlog
+  5-2-view-obligation-timeline: backlog
+  5-3-settle-obligation: backlog
+  5-4-enforce-settlement-prerequisites: backlog
+  epic-5-retrospective: optional
+
+  # Epic 6: Authorization & Access Control
+  epic-6: backlog
+  6-1-configure-pbac-policies: backlog
+  6-2-manage-group-admin-roles: backlog
+  6-3-handle-member-removal-is-viable-false: backlog
+  6-4-handle-member-rejoin-is-viable-true: backlog
+  epic-6-retrospective: optional
+
+  # Epic 7: Explainability & Audit Trail
+  epic-7: backlog
+  7-1-generate-explainability-payload-group-rules: backlog
+  7-2-implement-audit-event-logging: backlog
+  7-3-view-audit-trail-dispute-resolution: backlog
+  7-4-end-to-end-trace-reconstruction: backlog
+  epic-7-retrospective: optional
+
+  # Epic 8: UX Design System Implementation
+  epic-8: backlog
+  8-1-set-up-design-tokens-theme: backlog
+  8-2-build-custom-financial-components: backlog
+  8-3-implement-mobile-first-responsive-layouts: backlog
+  8-4-ensure-accessibility-compliance: backlog
+  8-5-implement-monetary-value-display-standards: backlog
+  8-6-implement-member-status-indicators: backlog
+  epic-8-retrospective: optional
